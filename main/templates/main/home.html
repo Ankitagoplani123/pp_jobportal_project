@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+<head>
+    <title>Job Getter</title>
+</head>
+<body>
+<header>
+    {% include "./base.html" %}
+    {% for message in messages %}
+    <div class="message">
+        <small style="color: white">{{ message }}</small>
+        <a href="" class="del-msg">x</a>
+    </div>
+    {% endfor %}
+    <div style="text-align: center; padding: 250px" >
+    <h1 style="font-size:60px; color:white; margin:10px;">Job Getter</h1>
+    <p style="font-size:20px; color: white;"><em>Everything You Need For a Great Future</em></p>
+    </div>
+</header>
+</body>
+</html>
